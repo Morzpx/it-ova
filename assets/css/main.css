@@ -1,0 +1,127 @@
+@import "../fonts/font.css";
+@import "ui/dropdown.css";
+@import "ui/input.css";
+@import "ui/checkbox.css";
+@import "ui/button.css";
+@import "style.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --container-min-width: 320px;
+    --container-max-width: 1400px;
+    --container-margin: 0px auto;
+    --container-padding: 0 1em;
+    --main: #FB812F;
+    --gray: #D1D1D1;
+    --ligth-gray: #F3F3F3;
+    --blue: #d9e5f8;
+    --white: #fff;
+    --black: #000;
+    --b-radius: 5px;
+    --font-size-16: 16px;
+    --h1: 24px;
+    --h2: 20px;
+}
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: var(--container-max-width);
+    min-width: var(--container-min-width);
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+    box-sizing: border-box;
+}
+.w100 {
+    width: 100%;
+}
+.ui-content {
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+}
+.ui-content .button, .btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h1, .h1 {
+    font-size: var(--h1);
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 2rem;
+}
+h2, .h2 {
+    font-size: var(--h2);
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 2rem;
+}
+h2, .h2 a {
+    color: var(--main);
+}
+.position-relative {
+    position: relative;
+}
+.icon {
+    --icon-size: 15px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    fill: var(--main);
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1;
+    transition: 200ms;
+}
+.text-right {
+    text-align: right;
+    justify-content: end
+}
+.--gray {--ui-color: var(--gray)}
+.--orange { --ui-color: var(--main)}
+/*multi range slider*/
+.noUi-horizontal {
+    height: 2px !important;
+}
+.noUi-target {
+    background: var(--main) !important;
+    border-radius: 4px !important;
+    border: inherit !important;
+    box-shadow: inherit !important;
+    position: relative !important;
+    top: -12px !important;
+}
+.noUi-connect {
+    background: var(--main) !important;
+}
+.slider-styled,
+.slider-styled .noUi-handle {
+    box-shadow: none;
+}
+
+/* Hide markers on slider handles */
+.slider-styled .noUi-handle::before,
+.slider-styled .noUi-handle::after {
+    display: none;
+}
+.noUi-handle {
+    background: url("../img/svg/range-icon.jpg") no-repeat !important;
+    border: 0 !important;
+}
+.noUi-horizontal .noUi-handle {
+    width: 12px !important;
+    height: 13px !important;
+    right: -6px !important;
+    cursor: pointer;
+}
+span.rub {
+    font-family: 'Rub';
+    margin-left: 5px !important;
+}
+/*multi range slider*/
+
+
+
